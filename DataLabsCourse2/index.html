@@ -10,7 +10,7 @@
 <style>
     body{background-color: grey;}
 
-    .container{background-color: aliceblue;
+    .container{background-color: white;
     margin: 2%;} 
     
     .colorBlue{
@@ -51,6 +51,23 @@
         padding-bottom: 10%;
     }
 
+    .header-area{
+        background-color: rgb(230, 229, 229);
+        height: 30px;
+        border: 1px solid lightgray;
+        margin-bottom: 50px;
+    }
+
+    div#header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    div#main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     
 </style>
 
@@ -59,15 +76,22 @@
     <div class="container">
         <div id="header">
             <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10 header-area">
+
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
             
                 <div class="col-6 title">
                     <div class="row">
                         <div class="col-4">
-                            <img src="https://img.freepik.com/free-photo/african-business-lady-standing-grey-background_171337-16083.jpg" alt="img1.jpg">
+                            <img class="img-thumbnail" src="mypic.png" alt="img1.jpg">
                         </div>
                         <div class="col-8">
                             <h1 class="display-1">Anna Smith</h1>
-                            <h1 class="colorBlue display-2">Job title/Expertise</h1>
+                            <h4 class="colorBlue">Job title/Expertise</h4>
                         </div>
                         
                     </div>
@@ -77,19 +101,29 @@
 
             </div>
             <div class="row">
-                <div class="col-6"></div>
+                <!-- <div class="col-6"></div>
                 
                 <ul class="col-6 list-group list-group-horizontal">
                     <li class="list-group-item active">RESUME</li>
                     <li class="list-group-item"><a href="#">PORTFOLIO</a></li>
                     <li class="list-group-item"><a href="#">CONTACT</a></li>
-                  </ul>
+                </ul> -->
+
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-end">
+                          <li class="breadcrumb-item"><a href="#">RESUME</a></li>
+                          <li class="breadcrumb-item"><a href="#">PORTFOLIO</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">CONTACT</li>
+                        </ol>
+                      </nav>
+                </div>
+                
 
             </div>
         </div>
         <div id="main">
             <div id="blockPersonalDetails">
-                <h1 class="display-1">PERSONAL DETAILS</h1>
                 <!-- 
                 Name:           John Smith
                 Day of Birth:   1st July 1985
@@ -98,37 +132,44 @@
                 Phone:          0000-1234-5678
                 Email:          jsmith@jsmith.com -->
 
-
-                <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item">Name:</li>
-                    <li class="list-group-item">Anna Smith</li>
-                </ul>
-                  <ul class="list-group list-group-horizontal-sm">
-                    <li class="list-group-item">Day of Birth:</li>
-                    <li class="list-group-item">1st July 1985</li>
-                </ul>
-                  <ul class="list-group list-group-horizontal-md">
-                    <li class="list-group-item">Nationality:</li>
-                    <li class="list-group-item">Citizen of Envato</li>
-                </ul>
-                  <ul class="list-group list-group-horizontal-lg">
-                    <li class="list-group-item">Adress: </li>
-                    <li class="list-group-item">123 Make Believe, Some Sity, Some Country</li>
-                </ul>
-                  <ul class="list-group list-group-horizontal-xl">
-                    <li class="list-group-item">Phone:</li>
-                    <li class="list-group-item">0000-1234-5678</li>
-                </ul>
-                  <ul class="list-group list-group-horizontal-xxl">
-                    <li class="list-group-item">Email:</li>
-                    <li class="list-group-item">jsmith@jsmith.com</li>
-                </ul>
-
-
-
-
-
-
+                <!--    Table     -->
+                <table class="table">
+                    <thead>
+                        <tr>
+                          <th scope="col"><h1 class="display-1">PERSONAL DETAILS</h1></th>
+                          <th scope="col"></th>
+                          
+                        </tr>
+                      </thead>
+                    <tbody>
+                        
+                      <tr>
+                        <td>Name:</td>
+                        <td>Anna Smith</td>
+                      </tr>
+                      <tr>
+                        <td>Day of Birth:</td>
+                        <td>1st July 1985</td>
+                      </tr>
+                      <tr>
+                        <td>Nationality:</td>
+                        <td>Citizen of Envato</td>
+                      </tr>
+                      <tr>
+                        <td>Adress:</td>
+                        <td>123 Make Believe, Some Sity, Some Country</td>
+                      </tr>
+                      <tr>
+                        <td>Phone:</td>
+                        <td>0000-1234-5678</td>
+                      </tr>
+                      <tr>
+                        <td>Email:</td>
+                        <td>jsmith@jsmith.com</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                <!--    Table     -->
 
             </div>
             <div id="blockProfProfile">
